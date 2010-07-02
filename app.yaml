@@ -1,0 +1,18 @@
+application: wave-xmpp
+version: 8
+runtime: python
+api_version: 1
+
+handlers:
+- url: /_wave/.*
+  script: main.py
+- url: /public/(.*)
+  static_files: public/\1
+  upload: public/(.*)
+- url: /
+  script: main.py
+- url: .*
+  script: main.py
+
+inbound_services:
+- xmpp_message

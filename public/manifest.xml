@@ -1,0 +1,12 @@
+<extension
+  name="XMPP"
+  description="Forwards new messages to your IM client in realtime. Google Talk, Pidgin, Miranda, any XMPP-compatible IM client which has your Google Wave address configured will notify you without needing you to be signed into Google Wave. Can even be configured via IM."
+  thumbnailUrl="http://wave-xmpp.appspot.com/public/thumbnail.png">
+  <author name="Daniel Faust"/>
+  <menuHook
+    location="newwavemenu"
+    text="Forwards new messages to your IM client in realtime." 
+    iconUrl="http://wave-xmpp.appspot.com/public/image.png">
+    <participant id="wave-xmpp@appspot.com"/>
+  </menuHook>
+</extension>
